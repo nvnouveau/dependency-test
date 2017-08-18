@@ -27,6 +27,16 @@ public void depend(String keys, List<String> values) {
 public void install(String program) {
 	// TODO Auto-generated method stub
 	
+	if (hs.contains(program)) {
+		System.out.println(program + " is already installed");
+		return;
+	}
+	List<String> hs = (List<String>) hm.get(program);
+	if (!hs.isEmpty() && !hs.contains(program)) {
+		
+				System.out.println("Installing " + );
+				hs.add();
+			}
 }
 
 
